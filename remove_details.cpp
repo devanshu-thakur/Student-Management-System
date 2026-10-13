@@ -11,6 +11,10 @@ int remove(){
     cout<<"Enter Student ID: ";
     string id;
     getline(cin>>ws,id);
+    if(id.length()!=8){
+        cout<<"Enter 8 digit ID!.\n";
+        remove();
+    }
     ifstream file("student.txt");
     ofstream file2("demo.txt");
     string line;

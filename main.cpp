@@ -7,7 +7,7 @@ void pg1(){
         cout<<"__";
     }
     cout<<"\n------> Smart Student Management System <------\n"<<endl;
-    cout<<"1.Register New Student Details\n"; //done
+    cout<<"1.Register New Student\n"; //done
     cout<<"2.Check Student Details\n"; //done
     cout<<"3.Remove Student data\n"; //done
     cout<<"4.Upadte Student Details\n"; //done
@@ -47,7 +47,7 @@ int main(){
             update();
         }
         else if(num==5){
-            cout<<"Sorry___\nUpdate is underway..>>\n";
+            cout<<"Sorry___\nUpdate is underway..>>\n"; //keep for update
         }
     }
     return 0;

@@ -8,7 +8,7 @@ int update(){
     section,newSection;
     cout<<"Enter student ID: ";cin>>id;
     if(id.length()!=8){
-        cout<<"ID is 8 digit code!";
+        cout<<"ID is 8 digit code!\n";
         update();
     }
     cout<<"Can be Updated:\nname,age,roll_no,section\n";

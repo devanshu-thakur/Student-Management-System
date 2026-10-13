@@ -18,7 +18,7 @@ int register_new_std(){
     //Auto Reading the registration number from file line 1;
 ifstream file4("student.txt");
 string line4;
-long long id = 2026000;
+long long id = 20260000;
 while (getline(file4, line4)) {
     if (line4.find("id:") == 0) {
         long long currentID = stoll(line4.substr(3));
@@ -39,7 +39,7 @@ id++;
         id--;
         return 0;
     }
-    cout<<"ID registered is"<<id<<endl;
+    cout<<"\nID registered is: "<<id<<endl;
     file<<"id:"<<id<<""<<endl;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     cout<<"Enter Name:";getline(cin,name);
