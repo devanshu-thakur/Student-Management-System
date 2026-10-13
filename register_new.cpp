@@ -15,15 +15,31 @@ int register_new_std(){
 //accessing time
     time_t now=time(nullptr);
     char* date=ctime(&now);
+    //Auto Reading the registration number from file line 1;
+ifstream file4("student.txt");
+string line4;
+long long id = 2026000;
+while (getline(file4, line4)) {
+    if (line4.find("id:") == 0) {
+        long long currentID = stoll(line4.substr(3));
+        if (currentID > id) {
+            id = currentID;
+        }
+    }
+}
+file4.close();
+id++;
 //taking required input and putting to file together
     ofstream file("student.txt",ios::app);
     string name,branch;
     int age,roll_no,sec;
-    long long id;
-    cout<<"Enter id: ";cin>>id;
+    //long long id;
+    //cout<<"Enter id: ";cin>>id;
     if(id==0){
+        id--;
         return 0;
     }
+    cout<<"ID registered is"<<id<<endl;
     file<<"id:"<<id<<""<<endl;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     cout<<"Enter Name:";getline(cin,name);
