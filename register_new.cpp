@@ -6,13 +6,12 @@
 using namespace std;
 
 int register_new_std(){
-
     int pin=1234,x;
-    cout<<"Enter Password:";(cin>>x);
+    cout<<"Enter Password:";(cin>>x);  //authenticate
     if(pin!=x){
         return 0;
     }
-//accessing time
+    //accessing time
     time_t now=time(nullptr);
     char* date=ctime(&now);
     //Auto Reading the registration number from file line 1;
@@ -28,6 +27,7 @@ while (getline(file4, line4)) {
     }
 }
 file4.close();
+//increasing id for further use
 id++;
 //taking required input and putting to file together
     ofstream file("student.txt",ios::app);
@@ -41,23 +41,29 @@ id++;
     }
     cout<<"\nID registered is: "<<id<<endl;
     file<<"id:"<<id<<""<<endl;
+
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     cout<<"Enter Name:";getline(cin,name);
-    
     file<<"name:"<<name<<""<<endl;
+
     cout<<"Enter Roll no. ";cin>>roll_no;
     file<<"roll no:"<<roll_no<<""<<endl;
+
     cout<<"Enter Age: ";cin>>age;
     file<<"age:"<<age<<"\n";
+
     cout<<"Enter branch: ";cin>>branch;
     file<<"branch:"<<branch<<"\n";
+
     cout<<"Enter Section: ";cin>>sec;
     file<<"section:"<<sec<<"\n";
+    
     file<<"registration date:"<<date<<"\n";
+    
     cout<<"\nsucessful";
     file.close();
     //REPROMPT
-    cout<<"1.New Registration\n2.Exit to back\n";
+    cout<<"\n1.New Registration\n2.Exit to back\n";
     cout<<"Enter option: ";
     int in;cin>>in;
     if(in==1){

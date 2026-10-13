@@ -5,14 +5,21 @@ using namespace std;
 int remove(){
     int pin=1234,x;
     cout<<"Enter Password:";(cin>>x);
-    if(pin!=x){
+    if(x!=pin){
+        cout<<"error...\n";
+        return 0;
+    }
+    else if(x==0){
         return 0;
     }
     cout<<"Enter Student ID: ";
     string id;
     getline(cin>>ws,id);
+    if(id==to_string(0)){
+        return 0;
+    }
     if(id.length()!=8){
-        cout<<"Enter 8 digit ID!.\n";
+        cout<<"Should be 8 digit ID!.\n";
         remove();
     }
     ifstream file("student.txt");
@@ -39,7 +46,7 @@ int remove(){
         cout<<"No Student record!";
     }
     else{
-        cout<<"Success";
+        cout<<"Success\n";
     }
     file.close();
     file2.close();

@@ -37,7 +37,6 @@ int check_by_id(){
     cout<<"Enter student ID: ";
     getline(cin>>ws,id);
     
-    
     cout<<"\nExpanding Details-------->"<<endl;
     string line;
     int count=0,t;

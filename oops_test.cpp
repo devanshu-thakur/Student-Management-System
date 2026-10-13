@@ -1,4 +1,4 @@
-/* #include<bits/stdc++.h>
+/* #include<bits/stdc++.h>  //fiile use for testing for preparation but has no use in the project
 using namespace std;
 class  student{
 public:
@@ -38,17 +38,6 @@ int main(){
     }
     
 } */
-
-
-
-
-
-
-
-
-
-
-
 #include<bits/stdc++.h>
 using namespace std;
 class  student{

@@ -20,9 +20,10 @@ int main(){
 
     while(true){ 
         pg1();
-        cout<<"Enter Option: ";cin>>num;
+        cout<<"Enter Option: ";
+        cin>>num;
         if(num==0){
-            cout<<"Please wait...";
+            cout<<"\nPlease wait...\n";
             Sleep(2000);
             break;
         }
@@ -47,7 +48,7 @@ int main(){
             update();
         }
         else if(num==5){
-            cout<<"Sorry___\nUpdate is underway..>>\n"; //keep for update
+            cout<<"Sorry___\nUpdates are underway...>>>\n"; //keep for updates
         }
     }
     return 0;

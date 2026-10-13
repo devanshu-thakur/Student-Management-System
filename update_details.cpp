@@ -11,12 +11,12 @@ int update(){
         cout<<"ID is 8 digit code!\n";
         update();
     }
-    cout<<"Can be Updated:\nname,age,roll_no,section\n";
-    cout<<"Enter what is to update: ";cin>>str;
+    cout<<"Update Options:\nname,age,roll_no,section\n";
+    cout<<"Enter exact to update: ";cin>>str;
     if(str!="name"||str!="age"||str!="roll_no"||str!="section"){
-        cout<<"error...";
+        cout<<"error...\n";
         return 0;
-    }
+    } 
     ifstream file("student.txt");
     while(getline(file,line)){
         if(line.find(id)!=string::npos){
