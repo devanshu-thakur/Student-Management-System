@@ -56,5 +56,15 @@ id++;
     file<<"registration date:"<<date<<"\n";
     cout<<"\nsucessful";
     file.close();
+    //REPROMPT
+    cout<<"1.New Registration\n2.Exit to back\n";
+    cout<<"Enter option: ";
+    int in;cin>>in;
+    if(in==1){
+        register_new_std();
+    }
+    else{
+        return 0;
+    }
     return 0;
 }
