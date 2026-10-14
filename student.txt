@@ -1,8 +1,1 @@
-id:20260001
-name:Devanshu Thakur
-roll no:97
-age:20
-branch:CSE
-section:2
-registration date:Tue Oct 13 19:05:32 2026
 
