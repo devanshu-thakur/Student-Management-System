@@ -18,20 +18,21 @@ void pg1(){
     
 }
 int input_entry(){
-    int num,a;
+    string num;
+    int a;
     while(true){ 
         pg1();
         cout<<"Enter Option: ";
         cin>>num;
-        if(num==0){
+        if(num=="0"){
             cout<<"\nPlease wait...\n";
             Sleep(2000);
             break;
         }
-        else if(num==1){
+        else if(num=="1"){
             register_new_std();
         }
-        else if(num==2){
+        else if(num=="2"){
             cout<<"\n1.Check by name()\n";
             cout<<"2.Check by ID()\nEnter Option: ";
             cin>>a;
@@ -42,13 +43,13 @@ int input_entry(){
                 check_by_id();
             }
         }
-        else if(num==3){
+        else if(num=="3"){
             remove();
         }
-        else if(num==4){
+        else if(num=="4"){
             update();
         }
-        else if(num==5){
+        else if(num=="5"){
             cout<<"Sorry___\nUpdates are underway...>>>\n"; //keeping for updates
         }
         else{

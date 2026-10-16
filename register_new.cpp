@@ -9,6 +9,7 @@ int register_new_std(){
     string pin="1234",x;
     cout<<"Enter Password:";(cin>>x); //authentication
     if(pin!=x){
+        cout<<"error...\n";
         return 0;
     }
     //accessing time

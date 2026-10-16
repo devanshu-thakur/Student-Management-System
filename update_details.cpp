@@ -7,7 +7,10 @@ int update(){
     int Age,newAge,roll_no,newRoll_no,
     section,newSection;
     cout<<"Enter student ID: ";cin>>id;
-    if(id.length()!=8){
+    if(id=="0"){
+        return 0;
+    }
+    else if(id.length()!=8){
         cout<<"ID is 8 digit code!\n";
         update();
     }
