@@ -5,7 +5,7 @@ The Smart Student Management System is a menu-driven C++ application developed u
 
 ## Features
 - **Register Student:** Store student details and registration date.
-- **Check Details:** Search students by name or ID.
+- **Check Details:** Search students by name or unique ID.
 - **Remove Student:** Delete student records.
 - **Update Details:** Modify existing student information.
 - **Rank List:** Planned for a future update.
@@ -50,7 +50,6 @@ g++ -std=c++20 main.cpp register_new.cpp remove_details.cpp check_details.cpp up
 
 ## Future Improvements
 - Complete the rank list feature.
-- Prevent duplicate student IDs.
 - Add better input validation.
 - Introduce a database or graphical interface.
 
