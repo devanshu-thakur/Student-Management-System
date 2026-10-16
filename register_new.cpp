@@ -6,8 +6,8 @@
 using namespace std;
 
 int register_new_std(){
-    int pin=1234,x;
-    cout<<"Enter Password:";(cin>>x);  //authenticate
+    string pin="1234",x;
+    cout<<"Enter Password:";(cin>>x); //authentication
     if(pin!=x){
         return 0;
     }

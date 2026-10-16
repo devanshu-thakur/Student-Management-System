@@ -3,9 +3,11 @@
 #include<windows.h>
 using namespace std;
 void pg1(){
+    //adding litte design
     for(auto i=0;i<40;i++){
         cout<<"__";
     }
+    //List to display
     cout<<"\n------> Smart Student Management System <------\n"<<endl;
     cout<<"1.Register New Student\n"; //done
     cout<<"2.Check Student Details\n"; //done
@@ -15,9 +17,8 @@ void pg1(){
     cout<<"0.Exit Program\n"; //done
     
 }
-int main(){
+int input_entry(){
     int num,a;
-
     while(true){ 
         pg1();
         cout<<"Enter Option: ";
@@ -48,8 +49,15 @@ int main(){
             update();
         }
         else if(num==5){
-            cout<<"Sorry___\nUpdates are underway...>>>\n"; //keep for updates
+            cout<<"Sorry___\nUpdates are underway...>>>\n"; //keeping for updates
+        }
+        else{
+            input_entry();
         }
     }
+    return 0;
+}
+int main(){
+    input_entry();
     return 0;
 }

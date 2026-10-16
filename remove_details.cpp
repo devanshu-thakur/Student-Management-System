@@ -3,13 +3,10 @@
 #include "project.h"
 using namespace std;
 int remove(){
-    int pin=1234,x;
+    string pin="1234",x;
     cout<<"Enter Password:";(cin>>x);
     if(x!=pin){
         cout<<"error...\n";
-        return 0;
-    }
-    else if(x==0){
         return 0;
     }
     cout<<"Enter Student ID: ";
