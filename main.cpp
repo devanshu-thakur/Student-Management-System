@@ -4,7 +4,7 @@
 using namespace std;
 void pg1(){
     //adding litte design
-    for(auto i=0;i<40;i++){
+    for(auto i=0;i<36;i++){
         cout<<"__";
     }
     //List to display
@@ -13,7 +13,8 @@ void pg1(){
     cout<<"2.Check Student Details\n"; //done
     cout<<"3.Remove Student data\n"; //done
     cout<<"4.Upadte Student Details\n"; //done
-    cout<<"5.Rank List\n";
+    cout<<"5.Marks Record\n"; //done
+    cout<<"6.Rank List\n";
     cout<<"0.Exit Program\n"; //done
     
 }
@@ -50,6 +51,22 @@ int input_entry(){
             update();
         }
         else if(num=="5"){
+            cout<<"\n1.Get Marks\n";
+            cout<<"2.Set Marks\n";
+            cout<<"Enter Option: ";
+            string perC;
+            cin>>perC;
+            if(perC=="1"){
+                get_marks();
+            }
+            else if(perC=="2"){
+                set_marks();
+            }
+            else{
+                break;
+            }
+        }
+        else if(num=="6"){
             cout<<"Sorry___\nUpdates are underway...>>>\n"; //keeping for updates
         }
         else{

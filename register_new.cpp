@@ -61,7 +61,7 @@ id++;
     
     file<<"registration date:"<<date<<"\n";
     
-    cout<<"\nsucessful";
+    cout<<"\nSucessful";
     file.close();
     //REPROMPT
     cout<<"\n1.New Registration\n2.Exit to back\n";
