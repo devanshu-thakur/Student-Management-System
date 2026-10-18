@@ -1,6 +1,7 @@
-#include<iostream>
+#include<iostream> //file is used to add new records.
 #include "project.h"
-#include<fstream>
+#include<string>
+#include<fstream> //file have input id as id
 #include<sqlite3.h>
 using namespace std;
 int set_marks(){
@@ -26,7 +27,7 @@ int set_marks(){
     }
     //set makrs as per id
     int arr[5];
-    cout<<"Maths FoCP FoEE PC E_Physics"<<endl;
+    cout<<"*Type order: Maths FoCP FoEE PC E_Physics"<<endl;
     cout<<"Enter Marks: ";
     for(auto i=0;i<5;i++){
         cin>>arr[i];
@@ -42,22 +43,23 @@ int set_marks(){
     const char * createTable =
         "create table if not exists record("
         "id int primary key,"
-        "Maths int,"
-        "FoCP tinyint,"
-        "FoEE tinyint,"
-        "PC tinyint,"
-        "E_Physics tinyint)";
+        "Maths tinyint check(Maths <= 100),"
+        "FoCP tinyint check(FoCP <= 100),"
+        "FoEE tinyint check(FoEE <= 100),"
+        "PC tinyint check(PC <= 100),"
+        "E_Physics tinyint check(E_Physics <= 100));";
+
     if(sqlite3_exec(db,createTable,nullptr,nullptr,&error)){
-        cout<<"Error: "<<sqlite3_errmsg(db);
+        cout<<"Error: "<<error<<endl;
         sqlite3_close(db);
         return 1;
     }
-    string insertData = "insert or ignore into record(id, Maths, FoCP, FoEE, PC, E_Physics) values(" +
+    string insertData = "insert into record(id, Maths, FoCP, FoEE, PC, E_Physics) values(" +
         id + "," + to_string(arr[0]) + "," + to_string(arr[1]) + "," +
         to_string(arr[2]) + "," + to_string(arr[3]) + "," + to_string(arr[4]) + ");";
 
     if (sqlite3_exec(db, insertData.c_str(), nullptr, nullptr, &error)) {
-        cout << "Error: " << sqlite3_errmsg(db) << endl;
+        cout << "Error: " << error << endl;
         sqlite3_close(db);
         return 1;
     }
@@ -65,7 +67,3 @@ int set_marks(){
     sqlite3_close(db);
     return 0;
 }
-/* int main(){
-    set_marks();
-    return 0;
-} */

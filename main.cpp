@@ -1,5 +1,6 @@
 #include <iostream> //This is main.cpp file. The First Page of Application.
 #include "project.h"
+#include<string>
 #include<windows.h>
 using namespace std;
 void pg1(){
@@ -53,6 +54,7 @@ int input_entry(){
         else if(num=="5"){
             cout<<"\n1.Get Marks\n";
             cout<<"2.Set Marks\n";
+            cout<<"3.Update Marks\n";
             cout<<"Enter Option: ";
             string perC;
             cin>>perC;
@@ -61,6 +63,9 @@ int input_entry(){
             }
             else if(perC=="2"){
                 set_marks();
+            }
+            else if(perC=="3"){
+                update_marks();
             }
             else{
                 break;

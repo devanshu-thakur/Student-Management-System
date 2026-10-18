@@ -1,6 +1,7 @@
 #include <iostream>
 #include<fstream>
 #include "project.h"
+#include<string>
 using namespace std;
 int update(){
     string str,line, id,oldName,newName;

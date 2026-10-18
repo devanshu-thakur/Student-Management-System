@@ -1,6 +1,7 @@
 #include <iostream>
 #include<fstream>
 #include "project.h"
+#include<string>
 using namespace std;
 int check_by_name(){
     ifstream file("student.txt");

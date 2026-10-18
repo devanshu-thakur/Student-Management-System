@@ -1,6 +1,7 @@
 #include <iostream>
 #include<fstream> //This is register_new.cpp file. it design to store new students data.
 #include "project.h"
+#include<string>
 #include<windows.h>
 #include<ctime>
 using namespace std;
@@ -63,11 +64,12 @@ id++;
     
     cout<<"\nSucessful";
     file.close();
-    //REPROMPT
+    //REPROMPT to register new student or exit
     cout<<"\n1.New Registration\n2.Exit to back\n";
     cout<<"Enter option: ";
-    int in;cin>>in;
-    if(in==1){
+    int re_ask;
+    cin>>re_ask;
+    if(re_ask==1){
         register_new_std();
     }
     else{

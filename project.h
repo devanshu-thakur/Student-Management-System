@@ -9,4 +9,5 @@ int update();
 int remove();
 int set_marks();
 int get_marks();
+int update_marks();
 #endif

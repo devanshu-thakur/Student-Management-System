@@ -1,5 +1,6 @@
-#include<iostream>
+#include<iostream> //file is used to obtain marks record from new.db.
 #include "project.h"
+#include<string> //file have input id as id
 #include<fstream>
 #include<sqlite3.h>
 using namespace std;
@@ -39,7 +40,7 @@ int get_marks(){
         sqlite3_close(db);
         return 1;
     }
-    cout << "_________________________________________________________\n";
+    cout << "---------------------------------------------------------\n";
     cout << "\nID        \tMaths \tFoCP \tFoEE \tPC \tE_Physics\n";
     cout << "---------------------------------------------------------\n";
     while(sqlite3_step(stmt)==SQLITE_ROW){

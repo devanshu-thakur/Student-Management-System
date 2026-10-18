@@ -1,6 +1,7 @@
 #include <iostream>
 #include<fstream>
 #include "project.h"
+#include<string>
 using namespace std;
 int remove(){
     string pin="1234",x;
