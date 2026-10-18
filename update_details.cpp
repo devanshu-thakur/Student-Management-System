@@ -12,10 +12,10 @@ int update(){
         return 0;
     }
     else if(id.length()!=8){
-        cout<<"ID is 8 digit code!\n";
+        cout<<"Invalid ID!\n";
         update();
     }
-    cout<<"Update Options:\nname,age,roll_no,section\n";
+    cout<<"*Update Options:\nname,age,roll_no,section\n";
     cout<<"Enter exact to update: ";cin>>str;
     if(str!="name"||str!="age"||str!="roll_no"||str!="section"){
         cout<<"error...\n";

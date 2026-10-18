@@ -10,4 +10,5 @@ int remove();
 int set_marks();
 int get_marks();
 int update_marks();
+int rank_list();
 #endif

@@ -12,9 +12,10 @@ A menu-driven Student Management System built with **C++20**. It manages student
   - **Set Marks** — add marks for a registered student.
   - **Get Marks** — view a student's marks.
   - **Update Marks** — update an existing marks record.
+  - **Rank List** — check top rankers and marks.
 - **Exit** — close the application.
 
-> The Rank List menu option is not implemented yet.
+> The Rank List menu option is implemented.
 
 ## Technologies Used
 
@@ -36,6 +37,7 @@ update_details.cpp
 set_marks.cpp
 get_marks.cpp
 update_marks.cpp
+rank_list.cpp      # List top rankers and their marks
 student.txt        # Student details used by the application
 new.db             # SQLite database for subject marks; created when needed
 README.md
@@ -86,4 +88,4 @@ The `.db` file is created locally by the application. It is not automatically sh
 
 ## Purpose
 
-This project is created for educational purposes to practise C++ programming, file handling, SQL, and SQLite database integration.
+This project is created for educational purposes to practise C++ programming, STL library, file handling, SQL, and SQLite database integration.

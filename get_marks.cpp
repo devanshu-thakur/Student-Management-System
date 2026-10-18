@@ -32,7 +32,7 @@ int get_marks(){
     }
     const char* selectData="select * from record;";
 
-    cout<<"Marks"<<endl;
+    cout<<"Academic Marks Record:"<<endl;
     sqlite3_stmt* stmt;
 
     if(sqlite3_prepare_v2(db,selectData,-1,&stmt,nullptr)!=SQLITE_OK){

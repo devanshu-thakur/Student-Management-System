@@ -10,7 +10,7 @@ int update_marks(){
     //Checking if entered_id is present in registered students list
     cout<<"Enter Id: ";cin>>entered_id;
     if(entered_id.length()!=8){
-        cout<<"Enter 8 digit ID!\n";
+        cout<<"Invalid ID!\n";
         update_marks();
     }
     ifstream file("student.txt");
@@ -57,6 +57,7 @@ char* error = nullptr;
         sqlite3_close(db);
         return 1;
     }
+    cout<<"Marks Updated!\n";
     sqlite3_close(db);
     return 0;
 }

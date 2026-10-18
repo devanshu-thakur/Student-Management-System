@@ -17,20 +17,20 @@ int register_new_std(){
     time_t now=time(nullptr);
     char* date=ctime(&now);
     //Auto Reading the registration number from file line 1;
-ifstream file4("student.txt");
-string line4;
-long long id = 20260000;
-while (getline(file4, line4)) {
-    if (line4.find("id:") == 0) {
-        long long currentID = stoll(line4.substr(3));
-        if (currentID > id) {
-            id = currentID;
+    ifstream file4("student.txt");
+    string line4;
+    long long id = 20260000;
+    while (getline(file4, line4)) {
+        if (line4.find("id:") == 0) {
+            long long currentID = stoll(line4.substr(3));
+            if (currentID > id) {
+                id = currentID;
+            }
         }
     }
-}
-file4.close();
-//increasing id for further use
-id++;
+    file4.close();
+    //increasing id for further use
+    id++;
 //taking required input and putting to file together
     ofstream file("student.txt",ios::app);
     string name,branch;
@@ -65,7 +65,7 @@ id++;
     cout<<"\nSucessful";
     file.close();
     //REPROMPT to register new student or exit
-    cout<<"\n1.New Registration\n2.Exit to back\n";
+    cout<<"\n[1] New Registration\n[2] Exit to back\n";
     cout<<"Enter option: ";
     int re_ask;
     cin>>re_ask;
