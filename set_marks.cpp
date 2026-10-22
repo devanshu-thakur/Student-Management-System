@@ -49,7 +49,7 @@ int set_marks(){
         "PC tinyint check(PC <= 100),"
         "E_Physics tinyint check(E_Physics <= 100));";
 
-    if(sqlite3_exec(db,createTable,nullptr,nullptr,&error)){
+    if(sqlite3_exec(db,createTable,nullptr,nullptr,&error)!=SQLITE_OK){
         cout<<"Error: "<<error<<endl;
         sqlite3_close(db);
         return 1;
@@ -58,7 +58,7 @@ int set_marks(){
         id + "," + to_string(arr[0]) + "," + to_string(arr[1]) + "," +
         to_string(arr[2]) + "," + to_string(arr[3]) + "," + to_string(arr[4]) + ");";
 
-    if (sqlite3_exec(db, insertData.c_str(), nullptr, nullptr, &error)) {
+    if (sqlite3_exec(db, insertData.c_str(), nullptr, nullptr, &error)!=SQLITE_OK) {
         cout << "Error: " << error << endl;
         sqlite3_close(db);
         return 1;

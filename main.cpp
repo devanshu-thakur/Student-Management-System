@@ -45,6 +45,9 @@ int input_entry(){
             else if(a==2){
                 check_by_id();
             }
+            else{
+                cout << "\nInvalid sub-option!\n";
+            }
         }
         else if(num=="3"){
             remove();

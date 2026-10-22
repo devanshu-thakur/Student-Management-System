@@ -4,5 +4,76 @@ roll no:97
 age:20
 branch:CSE
 section:2
-registration date:Sat Oct 17 19:22:54 2026
+registration date:Sun Oct 18 16:21:02 2026
 
+id:20260002
+name:Aarav Sharma
+roll no:98
+age:19
+branch:CSE
+section:1
+registration date:Sun Oct 18 16:22:10 2026
+
+id:20260003
+name:Riya Patel
+roll no:99
+age:18
+branch:ECE
+section:2
+registration date:Sun Oct 18 16:23:15 2026
+
+id:20260004
+name:Karan Verma
+roll no:100
+age:20
+branch:ME
+section:1
+registration date:Sun Oct 18 16:24:20 2026
+
+id:20260005
+name:Ananya Singh
+roll no:101
+age:19
+branch:CSE
+section:3
+registration date:Sun Oct 18 16:25:05 2026
+
+id:20260006
+name:Rahul Gupta
+roll no:102
+age:18
+branch:IT
+section:2
+registration date:Sun Oct 18 16:26:12 2026
+
+id:20260007
+name:Sneha Joshi
+roll no:103
+age:20
+branch:ECE
+section:1
+registration date:Sun Oct 18 16:27:18 2026
+
+id:20260008
+name:Aditya Mishra
+roll no:104
+age:19
+branch:CSE
+section:2
+registration date:Sun Oct 18 16:28:25 2026
+
+id:20260009
+name:Meera Shah
+roll no:105
+age:18
+branch:CIVIL
+section:3
+registration date:Sun Oct 18 16:29:30 2026
+
+id:20260010
+name:Vikram Yadav
+roll no:106
+age:20
+branch:ME
+section:1
+registration date:Sun Oct 18 16:30:45 2026

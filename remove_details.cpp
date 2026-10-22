@@ -8,7 +8,7 @@ int remove(){
     cout<<"Enter Password:";(cin>>x);
     if(x!=pin){
         cout<<"error...\n";
-        return 0;
+        remove();
     }
     cout<<"Enter Student ID: ";
     string id;

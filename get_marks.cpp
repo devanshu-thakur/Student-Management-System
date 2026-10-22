@@ -21,6 +21,7 @@ int get_marks(){
     }
     file.close();
     if(match_id!=id || id=="0"){
+        cout<<"ID does not exists!";
         return 0;
     }
     //get makrs from databse
